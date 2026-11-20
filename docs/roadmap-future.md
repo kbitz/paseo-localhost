@@ -1,0 +1,7 @@
+## Future
+
+- **Background port watching** — notice a listening socket in a workspace and forward without a click; rejected for the public design in favor of explicit click/tool/panel actions and simpler cross-platform teardown. **Revisit when:** public-beta evidence shows the click flow missing the dev-server links users actually need.
+- **Terminal link interception** — Paseo 0.16.1 exposes no terminal link or transformer API to plugins, so dev-server URLs printed in terminal tabs stay plain; panel/manual and agent-tool paths cover them only indirectly. **Revisit when:** Paseo exposes a terminal link/transformer contribution point to plugins.
+- **Stable 1.0 stabilization** — convert public-beta defects, support questions and compatibility findings into release-hardening Tracks; scope cannot be honest before beta evidence exists. **Revisit when:** the public-beta checkpoint is accepted and a maintainer-defined beta soak completes with no unresolved exposure, data-loss or teardown defect.
+- **Translated UI and listing** — English is complete at public beta; translated listing/UI text should be human-reviewed, not machine-claimed. **Revisit when:** a maintainer or contributor can supply and review a complete translation for a requested locale.
+- **Per-forward tailnet authorization** — the plugin relies on the user's existing tailnet policy and adds no authentication or policy editing. **Revisit when:** Tailscale or Paseo exposes a safe per-forward authorization API suitable for plugins.
